@@ -9,8 +9,5 @@ test('mensagem de boas vindas', () => {
 });
 
 test('maior número', () => {
-  if (a>b)
-    expect(exibirMaior(a, b)).toBe(a)
-  if (a<b)
-    expect(exibirMaior(a, b)).toBe(b)
+  expect(exibirMaior(2, 3)).toBe(3)
 })

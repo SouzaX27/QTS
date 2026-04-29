@@ -7,10 +7,12 @@ function mensagemBoasVindas(nome) {
 }
 
 function exibirMaior(a, b){
-  if (a>b)
+  if (a>b){
     return a;
-  if (a<b)
+  };
+  if (a<b){
     return b;
+  }
 }
 
 module.exports = { somar, mensagemBoasVindas, exibirMaior };
