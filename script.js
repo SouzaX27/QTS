@@ -6,5 +6,12 @@ function mensagemBoasVindas(nome) {
   return `Olá, ${nome}!`;
 }
 
-module.exports = { somar, mensagemBoasVindas };
+function exibirMaior(a, b){
+  if (a>b)
+    return a;
+  if (a<b)
+    return b;
+}
+
+module.exports = { somar, mensagemBoasVindas, exibirMaior };
 // export default { somar, mensagemBoasVindas };
