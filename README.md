@@ -1,2 +1,2 @@
 # QTS
-repositório de teste
+Repositorio de teste
