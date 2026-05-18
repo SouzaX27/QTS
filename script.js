@@ -18,7 +18,9 @@ function exibirMaior(a, b) {
 
   
 function parOuImpar(a, b) {
-  if (typeof a == Number && typeof b == Number) {
+  if (typeof a !== number && typeof b !== number) {
+    return 'Erro'
+  } else {
     if (a%2 == 0 && b%2 == 0) {
       return 'Ambos são pares'
     }
@@ -31,9 +33,8 @@ function parOuImpar(a, b) {
     if (a%2 != 0 && b%2 == 0) {
       return 'Apenas B é par'
     }
-  } else {
-    return 'Erro'
   }
+    
 };
 
   // Crie uma função que receberá a idade e retornará se a pessoa pode votar , voto opcional ou não pode votar.
