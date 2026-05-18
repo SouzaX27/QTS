@@ -17,9 +17,9 @@ test('maior número', () => {
 test('par ou ímpar', () => {
   expect(parOuImpar('a','b')).toBe('Erro');
   expect(parOuImpar(2,3)).toBe('Apenas A é par');
-  expect(parOuImpar(2,3)).toBe('Apenas B é par');
-  expect(parOuImpar(2,3)).toBe('Ambos são pares');
-  expect(parOuImpar(2,3)).toBe('Ambos são ímpares');
+  expect(parOuImpar(3,2)).toBe('Apenas B é par');
+  expect(parOuImpar(4,4)).toBe('Ambos são pares');
+  expect(parOuImpar(7,7)).toBe('Ambos são ímpares');
 });
 
 test('Pode ou Deve Votar', () => {
