@@ -1,4 +1,4 @@
-const { somar, mensagemBoasVindas, exibirMaior, parOuImpar, podeVotar } = require('./script');
+const { somar, mensagemBoasVindas, exibirMaior, parOuImpar, podeVotar, positivoNegativoZero, salarioBonus } = require('./script');
 
 test('soma dois números', () => {
   expect(somar(2, 3)).toBe(5);
@@ -26,4 +26,18 @@ test('Pode ou Deve Votar', () => {
   expect(podeVotar(10)).toBe('Não Pode Votar');
   expect(podeVotar(16)).toBe('Voto Opcional');
   expect(podeVotar(22)).toBe('Voto Obrigatório');
+})
+
+test('Positivo, Negativo ou Zero', () => {
+  expect(positivoNegativoZero('a')).toBe('Erro');
+  expect(positivoNegativoZero(0)).toBe('A é igual a zero')
+  expect(positivoNegativoZero(1)).toBe('A é positivo')
+  expect(positivoNegativoZero(-1)).toBe('A é negativo')
+})
+
+test('Bonús do Salário', () => {
+  expect(salarioBonus('a')).toBe('Erro');
+  expect(salarioBonus('1500')).toBe('Salário: R$1500.00 | Bonús: R$300.00');
+  expect(salarioBonus('2500')).toBe('Salário: R$2500.00 | Bonús: R$250.00');
+  expect(salarioBonus('5750')).toBe('Salário: R$5750.00 | Bonús: R$287.50');
 })
